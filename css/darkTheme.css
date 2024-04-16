@@ -2,17 +2,6 @@ body {
     background-color: var(--primaryDark);
 }
 
-.preloaderBg {
-    background-color: var(--primaryDark);
-}
-
-.preloader {
-    border: 15px solid var(--gray);
-    border-top: 15px solid var(--primaryTheme);
-    border-right: 15px solid var(--primaryTheme);
-    border-bottom: 15px solid var(--primaryTheme);
-}
-
 .navbar {
     border-bottom: 1px solid var(--white);
 }
@@ -159,15 +148,6 @@ input:checked + .themeToggle {
     background:  var(--primaryThemeDark);
 }
 
-.skillCircle .title {
-    fill: var(--white);
-}
-
-.skillCircle .skillCircleSvg circle[id*='circleBg'] {
-    fill: var(--primaryDark);
-    stroke: var(--gray);
-}
-
 .hiddenWindow {
     background-color: var(--secondaryDark);
 }
@@ -208,6 +188,10 @@ input:checked + .themeToggle {
 
 .form input, .form textarea, .form select {
     background-color: var(--gray);
+}
+
+.badges .badge {
+    background-color: var(--primaryThemeDark);
 }
 
 @supports not (backdrop-filter: blur(15px)) {

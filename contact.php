@@ -12,7 +12,6 @@
         <?php require "../head.php"; ?>
     </head>
     <body>
-        <?php require "../preloader.php"; ?>
         <?php require "../navigation.php"; ?>
         <section class="section sectionPrimary onlySection">
             <div class="txtCenter">

@@ -5,7 +5,6 @@
         <?php require "../head.php"; ?>
     </head>
     <body>
-        <?php require "../preloader.php"; ?>
         <?php require "../navigation.php"; ?>
         <!--404 error-->
         <section class="section sectionPrimary fullSizeSection">

@@ -39,27 +39,6 @@ a {
     display: block;
 }
 
-.preloaderBg {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-}
-
-.preloader {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    -webkit-animation: preloaderSpin 1s ease infinite;
-    animation: preloaderSpin 1s ease infinite;
-    will-change: transform;
-}
-
 .navbar {
     width: 100vw;
     height: 75px;
@@ -632,38 +611,6 @@ input:checked + .themeToggle:before {
     margin-top: 20px;
 }
 
-.skillCircles {
-    margin: 50px auto 50px auto;
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.skillCircleSvg {
-    transform: rotate(-90deg);
-    will-change: transform;
-}
-
-.skillCircle .title {
-    width: 15%;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.skillCircle .skillCircleSvg .title {
-    transform: rotate(90deg) translateY(-150px);
-    will-change: transform;
-}
-
-#vaardigheden .primaryBtn {
-    margin: 0 auto;
-}
-
 .hiddenWindowBg {
     width: 100%;
     height: 100%;
@@ -695,12 +642,6 @@ input:checked + .themeToggle:before {
     box-shadow: 0px 5px 30px -5px var(--black);
     position: relative;
     z-index: 4;
-}
-
-#vaardigheden .hiddenWindow .primaryBtn.closeBtn {
-    margin-right: 0px;
-    padding: 10px;
-    border-radius: 50%;
 }
 
 .hiddenWindowScrollablePart {
@@ -998,6 +939,19 @@ select.inputField {
     color: var(--primaryTheme);
 }
 
+.badges {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.badges .badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: block;
+}
+
 .opacityZero {
     opacity: 0;
 }
@@ -1085,6 +1039,8 @@ select.inputField {
     .hiddenMenuLink {
         width: max-content;
         margin: 10px auto;
+        transition: 0.3s;
+        will-change: transition;
     }
 
     .hiddenMenuFooter {

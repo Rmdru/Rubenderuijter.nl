@@ -9,7 +9,6 @@
         <?php require "../head.php"; ?>
     </head>
     <body>
-        <?php require "../preloader.php"; ?>
         <?php require "../navigation.php"; ?>
         <div class="notification"></div>
         <section class="section sectionPrimary onlySection">

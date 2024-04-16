@@ -1,14 +1,3 @@
-.preloaderBg {
-    background-color: var(--white);
-}
-
-.preloader {
-    border: 15px solid var(--primaryLight);
-    border-top: 15px solid var(--primaryTheme);
-    border-right: 15px solid var(--primaryTheme);
-    border-bottom: 15px solid var(--primaryTheme);
-}
-
 .title {
     color: var(--black);
 }
@@ -31,6 +20,7 @@
 
 .hiddenMenuLink:hover {
     background-color: var(--primaryLight);
+    box-shadow: inset 0px 0px 0px 1px var(--primaryThemeDark);
 }
 
 .navbarLink:hover {
@@ -162,15 +152,6 @@ input:checked + .themeToggle {
     background:  var(--primaryThemeDark);
 }
 
-.skillCircle .title {
-    fill: var(--black);
-}
-
-.skillCircle .skillCircleSvg circle[id*='circleBg'] {
-    fill: var(--white);
-    stroke: var(--primaryLight);
-}
-
 .hiddenWindow {
     background-color: var(--primaryLight);
 }
@@ -222,6 +203,11 @@ input:checked + .themeToggle {
 }
 
 .Typewriter__wrapper .highlighted {
+    color: var(--white);
+}
+
+.badges .badge {
+    background-color: var(--primaryThemeDark);
     color: var(--white);
 }
 

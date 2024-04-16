@@ -1,9 +1,6 @@
-//preloader
+//typewriter
 $(window).on("load", function() {
-    setTimeout(function() {
-        $(".preloaderBg").fadeOut();
-        typeWriter("landingPageTitle", "Ruben de Ruijter");
-    }, 500);
+    typeWriter("landingPageTitle", "Ruben de Ruijter");
 })
 
 //change navbar tabs with intersection observer api
@@ -528,22 +525,3 @@ function copyLink() {
     $(".notification").html("<p class='primaryTxt'><span class='material-icons'>check</span> Link succesvol gekopieerd!</p>");
     showNotification();
 }
-
-//CTA typewriter
-var ctaTypewriterEl = document.getElementById("ctaTypewriter");
-
-var ctaTypewriter = new Typewriter(ctaTypewriterEl, {
-    loop: true,
-    cursor: "",
-    delay: 30
-});
-
-ctaTypewriter.typeString("Heeft u <span class='highlighted'>interesse</span>?<br />Kom in <span class='highlighted'>contact</span>.")
-    .pauseFor(5000)
-    .deleteAll()
-    .typeString("Opzoek naar een <span class='highlighted'>Software Developer</span>?<br />Ontdek wat ik voor je kan <span class='highlighted'>betekenen</span>.")
-    .pauseFor(5000)
-    .deleteAll()
-    .typeString("Heeft u een <span class='highlighted'>applicatie</span> nodig?<br />Ontdek wat ik voor je kan <span class='highlighted'>doen</span>.")
-    .pauseFor(5000)
-    .start();
